@@ -189,6 +189,7 @@ window.onload = function () {
   }
 
   function randomize() {
+    console.log(gui);
     gui.__controllers.forEach((control) => {
       if (control.constructor.name == "NumberControllerSlider") {
         const max = control.__max;
